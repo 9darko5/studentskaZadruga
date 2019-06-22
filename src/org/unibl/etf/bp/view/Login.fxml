@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: B9C3C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.bp.controller.LoginController">
+   <children>
+      <VBox layoutX="53.0" layoutY="27.0" prefHeight="246.0" prefWidth="194.0" spacing="5.0">
+         <children>
+            <Label text="Korisničko ime">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTF" promptText="Korisničko ime" style="-fx-background-color: #DBE1E3;">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </TextField>
+            <Label text="Lozinka">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="lozinkaTF" promptText="Lozinka" style="-fx-background-color: #DBE1E3;">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="errorLozinkaLabel" prefHeight="17.0" prefWidth="194.0" text="Neispravno korisničko ime ili lozinka" textFill="#e81414">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Tempus Sans ITC" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: #82ACF4;" text="Prijavi se">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="123.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

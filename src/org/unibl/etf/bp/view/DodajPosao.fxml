@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #B9C3C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.bp.controller.DodajPosaoController">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="333.0" prefWidth="179.0" spacing="20.0">
+         <children>
+            <Label text="Cijena po satu">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Broj potrebnih radnika">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Poslodavac">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Opis posla">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="201.0" layoutY="14.0" prefHeight="333.0" prefWidth="187.0" spacing="15.0">
+         <children>
+            <TextField fx:id="cijenaPoSatu" style="-fx-background-color: #DBE1E3;" />
+            <TextField fx:id="brojPotrebnihRadnika" style="-fx-background-color: #DBE1E3;" />
+            <ComboBox fx:id="poslodavacComboBox" prefWidth="150.0" style="-fx-background-color: #DBE1E3;" />
+            <TextArea fx:id="opisPosla" prefHeight="197.0" prefWidth="187.0" style="-fx-background-color: #DBE1E3;" />
+         </children>
+      </VBox>
+      <Button fx:id="otkazi" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#otkaziAction" style="-fx-background-color: #82ACF4;" text="Otkaži">
+         <font>
+            <Font name="Tempus Sans ITC" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="sacuvaj" layoutX="325.0" layoutY="361.0" mnemonicParsing="false" onAction="#sacuvajAction" style="-fx-background-color: #82ACF4;" text="Sačuvaj">
+         <font>
+            <Font name="Tempus Sans ITC" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

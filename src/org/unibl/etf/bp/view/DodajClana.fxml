@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #B9C3C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.bp.controller.DodajClanaController">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="161.0" spacing="15.0">
+         <children>
+            <Label text="JMB">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Ime">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Prezime">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Adresa">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Mjesto">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Broj članske karte">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Datum isteka članske karte">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Broj lične karte">
+               <font>
+                  <Font name="Tempus Sans ITC" size="14.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox layoutX="187.0" layoutY="14.0" prefHeight="335.0" prefWidth="200.0" spacing="11.0">
+         <children>
+            <TextField fx:id="jmb" style="-fx-background-color: #DBE1E3;" />
+            <TextField fx:id="ime" style="-fx-background-color: #DBE1E3;" />
+            <TextField fx:id="prezime" style="-fx-background-color: #DBE1E3;" />
+            <TextField fx:id="adresa" style="-fx-background-color: #DBE1E3;" />
+            <ComboBox fx:id="mjestoComboBox" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #DBE1E3;" />
+            <TextField fx:id="brojClanskeKarte" style="-fx-background-color: #DBE1E3;" />
+            <DatePicker fx:id="datumIsteka" style="-fx-background-color: #DBE1E3;" />
+            <TextField fx:id="brojLicneKarte" style="-fx-background-color: #DBE1E3;" />
+         </children>
+      </VBox>
+      <Button fx:id="otkazi" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#otkaziAction" style="-fx-background-color: #82ACF4;" text="Otkaži">
+         <font>
+            <Font name="Tempus Sans ITC" size="14.0" />
+         </font></Button>
+      <Button fx:id="sacuvaj" layoutX="324.0" layoutY="361.0" mnemonicParsing="false" onAction="#sacuvajAction" style="-fx-background-color: #82ACF4;" text="Sačuvaj">
+         <font>
+            <Font name="Tempus Sans ITC" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
